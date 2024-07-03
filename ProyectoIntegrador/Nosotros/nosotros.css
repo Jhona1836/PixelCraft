@@ -10,81 +10,87 @@ body {
     padding: 30px;
 }
 
-.header {
-    border: 2px solid yellowgreen;
-    display: flex;
+.header{
+    border-color: yellowgreen;
+    border-style: solid;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    height: 145px;
-    padding: 5px 2%;
-    background-color: #1a1a1a;
+    height:auto;
+    padding: 5px 3%;
+    
 }
 
-.header .logo {
+.header .logo{
     cursor: pointer;
     display: flex;
-    align-items: center;
-}
+    align-items: center;}
 
-.header .logo img {
+.header .logo img{
     height: 135px;
     width: auto;
-    transition: transform 0.3s;
-}
+    transition: all 0.3s;}
 
-.header .logo img:hover {
-    transform: scale(1.5);
-}
+.header .logo img:hover{
+    transform: scale(1.5,1.5);}
 
-.header .logo span {
+.header .logo span{
     font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
     font-size: 64px;
     color: white;
-    text-align: center;
-    margin-left: 10px;
+    vertical-align: middle;
+    text-align: center;}
+
+.header .nav-links{
+    list-style:none ;
+    
 }
 
-.header .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.header .nav-links li {
+.header .nav-links li{
     display: inline-block;
-    margin: 0 20px;
-}
+    padding: 10px;
+    margin:10px;
+height: auto;}
 
-.header .nav-links li:hover {
-    transform: scale(1.1);
-}
+.header .nav-links li:hover{
+    transform: scale(1.1);}
 
-.header .nav-links a {
-    font-weight: 700;
-    color: white;
+.header .nav-links a{
+    font-size: 700;
+    color:white;
     text-decoration: none;
-    transition: color 0.3s;
+padding: 6px;
 }
 
-.header .nav-links a:hover {
-    color: yellow;
+.header .nav-links li a:hover{
+    padding: 8px;
+    border-radius: 10%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
-.header .btn button {
+.header .btn button{
     font-weight: 700;
-    color: #000;
+    color:#000;
     padding: 9px 15px;
-    border: 2px solid yellowgreen;
+    border-color: yellowgreen;   
+    border-style: solid;
     border-radius: 10px;
+    border-width:2px ;
     background-color: #B1FF33;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-}
+    transition: all 0.3s;}
 
-.header .btn button:hover {
+.header.btn button:hover{
     background-color: green;
-    color: yellow;
-    transform: scale(1.1);
-}
+    color:yellow;
+    transform: scale(1,1);}
+
 
 .contenido {
     display: flex;
