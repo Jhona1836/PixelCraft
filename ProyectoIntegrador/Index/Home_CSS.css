@@ -183,7 +183,7 @@ padding: 6px;
 
 .Imagen{
     margin-top: 1%;
-    background-image: url(../Integrador/Imagenes/fondo_home.png);
+    background-image: url(../Index/Imagenes/fondo_home.png);
     text-align: center;
     align-items: center;
     width: auto;
@@ -296,7 +296,7 @@ padding: 6px;
 .wrapper .image_proceso{
     padding: 2%;
    text-align: center;
-    background-image: url(../Integrador/Imagenes/image\ 3.png);
+    background-image: url(../Index/Imagenes/image\ 3.png);
     background-size: auto;
     background-repeat: no-repeat;
     height: 640px;
