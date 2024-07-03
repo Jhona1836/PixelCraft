@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    background-color: #121212;
+    color: #fff;
+    padding: 30px;
+}
+
+.header {
+    border: 2px solid yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 145px;
+    padding: 5px 2%;
+    background-color: #1a1a1a;
+}
+
+.header .logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 135px;
+    width: auto;
+    transition: transform 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.5);
+}
+
+.header .logo span {
+    font-family: "Jomhuria", serif;
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header .nav-links a:hover {
+    color: yellow;
+}
+
+.header .btn button {
+    font-weight: 700;
+    color: #000;
+    padding: 9px 15px;
+    border: 2px solid yellowgreen;
+    border-radius: 10px;
+    background-color: #B1FF33;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.header .btn button:hover {
+    background-color: green;
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    padding: 100px 12%;
+}
+
+.text-contenido {
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.text-contenido:hover {
+    transform: scale(1.1);
+}
+
+.text-contenido h1 {
+    font-size: 4.3em;
+    margin-bottom: 20px;
+    color: #a3e095;
+}
+
+.text-contenido h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.text-contenido p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.image-contenido img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.acerca-de-nosotros, .origen, .fundadores, .actualmente, footer {
+    text-align: center;
+}
+
+.acerca-de-nosotros h1 {
+    font-size: 3.75em;
+    margin-bottom: 10px;
+    color: #f0f426;
+}
+
+.fundadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.fundador, .izquierda {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 40px;
+    background-color: #000;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.foto-fundador, .foto-izquierda {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.foto-fundador img, .foto-izquierda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-fundador, .info-izquierda {
+    text-align: left;
+    max-width: 600px;
+}
+
+.info-fundador h3, .info-izquierda h3 {
+    margin: 0;
+    font-size: 34px;
+    transition: transform 0.3s;
+}
+
+.info-fundador h3:hover, .info-izquierda h3:hover {
+    transform: scale(1.1);
+}
+
+.info-fundador h2, .info-izquierda h2 {
+    margin: 0;
+    font-size: 14px;
+    color: #63e36f;
+}
+.fundadores-contenido{
+    margin: 0px;
+    font-size: 40px;
+    color: #bedd95;
+}
+.info-fundador p, .info-izquierda p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+}
+
+.actualmente {
+    padding: 20px 40px;
+}
+
+.actualmente p, footer p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.boton-contacto {
+    font-weight: 700;
+    color: #000;
+    padding: 9px 15px;
+    border: 2px solid yellowgreen;
+    border-radius: 10px;
+    background-color: #B1FF33;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.boton-contacto:hover {
+    background-color: green;
+    color: yellow;
+    transform: scale(1.1);
+}
+
+/* Animación de texto de bienvenida */
+.animated-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
