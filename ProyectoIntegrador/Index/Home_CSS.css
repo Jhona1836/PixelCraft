@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*
+
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 19px;
+}
+
+body
+{
+    background-color: black;
+
+}
+.header{
+    border-color: yellowgreen;
+    border-style: solid;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:auto;
+    padding: 5px 3%;
+    
+}
+
+.header .logo{
+    cursor: pointer;
+    display: flex;
+    align-items: center;}
+
+.header .logo img{
+    height: 135px;
+    width: auto;
+    transition: all 0.3s;}
+
+.header .logo img:hover{
+    transform: scale(1.5,1.5);}
+
+.header .logo span{
+    font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 64px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;}
+
+.header .nav-links{
+    list-style:none ;
+    
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 10px;
+    margin:10px;
+height: auto;}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);}
+
+.header .nav-links a{
+    font-size: 700;
+    color:white;
+    text-decoration: none;
+padding: 6px;
+}
+
+.header .nav-links li a:hover{
+    padding: 8px;
+    border-radius: 10%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.header .btn button{
+    font-weight: 700;
+    color:#000;
+    padding: 9px 15px;
+    border-color: yellowgreen;   
+    border-style: solid;
+    border-radius: 10px;
+    border-width:2px ;
+    background-color: #B1FF33;
+    cursor: pointer;
+    transition: all 0.3s;}
+
+.header.btn button:hover{
+    background-color: green;
+    color:yellow;
+    transform: scale(1,1);}
+
+
+.titulo .empresa{
+    margin-top: 4%;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style:normal;
+    font-size: 50px;
+    text-align: center;
+    color: white;}
+
+.titulo .subtitulo{
+    
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 1%;}
+
+.lugares {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    border-color: yellowgreen;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    width: 540px;
+    height: 80px;
+    padding: 1%;
+    background: rgba(50, 49, 49, 0.5); /* Agregué esta propiedad para agregar un fondo blanco semi-transparente */
+    backdrop-filter: blur(5px); /* Agregué esta propiedad para agregar un efecto de blur al fondo */}
+
+.lugares .nav-lug{
+    list-style: none;}
+
+.lugares .nav-lug li{
+    display: inline-block;
+    padding: 0 3px;}
+
+.lugares .nav-lug a{
+    text-decoration: none;
+    color: white;}
+
+.lugar1{ 
+    background-color: #00255D;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 10px; 
+    color: white;}
+
+.lugar2{
+   
+    background-color: #C34139;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 10px; 
+    color: white;}
+
+.lugar3{
+   
+    background-color: #4B7E9A;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 10px; 
+    color: white;}
+
+.lugar4{
+   
+    background-color: #283D38;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 10px; 
+    color: white;}
+
+.Imagen{
+    margin-top: 1%;
+    background-image: url(../Integrador/Imagenes/fondo_home.png);
+    text-align: center;
+    align-items: center;
+    width: auto;
+    height: 448px;
+    margin-bottom: 2%;}
+
+.nav-img{
+    margin-top: 3%;}
+
+
+.marcas{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-color: yellowgreen;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    width: auto;
+    height: 80px;
+    padding: 1%;
+    background: rgba(50, 49, 49, 0.5); /* Agregué esta propiedad para agregar un fondo blanco semi-transparente */
+    backdrop-filter: blur(5px); /* Agregué esta propiedad para agregar un efecto de blur al fondo */}
+
+
+.top-div {
+  grid-column: 1 / 4;
+  background-color:transparent;
+  padding: 1em;
+  text-align: center;
+  color: white;}
+
+
+.top-div .titulo_proceso{
+    font-size: 50px;
+    margin-bottom: 1%;}
+
+.top-div .alternativo-titulo{
+      font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style:normal;
+  font-size: 18px;}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 3%;}
+
+.wrapper .contenedor {
+  border-radius: 5px;
+  background-color: black;
+  padding: 1cm;
+  color:white;
+  margin-bottom: 5%;
+  font-size: 10px;
+  text-align: center;}
+
+.wrapper .contenedor .iconProceso{
+    text-align: left;}
+
+.wrapper .contenedor .tituloc{
+    text-align: left;
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px ;
+    margin-bottom: 5%;}
+
+.wrapper .contenedor .tituloc1{
+    text-align: center;
+    font-family: "Boogaloo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px ;
+    margin-bottom: 5%;}
+
+.wrapper .contenedor .alternativo{
+    text-align: left;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: 18px;}
+
+.wrapper .contenedor .btnleer {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: 18px;
+    font-size: small;
+    width: 2cm; /* ancho del botón */
+    height: 5cm; /* alto del botón */
+    align-content: center;
+    align-self: center;
+    background-color: #262626;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+    text-decoration: none; }
+
+.wrapper .contenedor .btnleer:hover{
+    background-color: greenyellow;}
+
+.wrapper .image_proceso{
+    padding: 2%;
+   text-align: center;
+    background-image: url(../Integrador/Imagenes/image\ 3.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 557px;}
+
+.wrapper .contenedor .btnleer2 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: 18px;
+    font-size: small;
+    width: 2cm; /* ancho del botón */
+    height: 5cm; /* alto del botón */
+    align-content: center;
+    align-self: center;
+    background-color: #262626;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+    text-decoration: none;}
+
+.eleccion{
+    margin-top: 3%;}
+
+ .eleccion .titulo_eleccion{
+ font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 64px;
+    text-align: center;
+    color: #FFC701;}   
+
+ .eleccion .alternativo-eleccion{
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 6%; }
+
+    .contenedor1{
+        display: flex;}
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1px;
+        margin-left: 40px;
+        width: 570px;
+        padding: 2px; }
+      
+      .grid-item {
+        color: white;
+        padding: 10px;
+        border-radius: 0px;
+        height: 500px;
+        width: 290px;
+    }
+
+      .grid-container .grid-item .Imagen1{
+        float: left;
+        margin-right: 5%; }
+
+      .grid-container .grid-item .titulo_con{
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-style:normal;
+        font-size: 26px;
+        margin-left: 2%;}
+
+      .grid-container .grid-item .parrafo{
+        margin-top: 35%;
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-size: 20px;}
+      
+     .imagen_cont{
+        margin-left: 8%;
+    float:right;
+    height: 834px;
+    width: 843px;
+   }
+
+
+
+   .importancia{
+   
+    margin-top: 8%;
+    color: white;
+   }
+
+   .importancia .titulo_importancia {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 64px;
+    grid-column: 1 / -1;
+    justify-self: center;
+    text-align: center;
+  }
+
+
+  .importancia_div {
+    margin-top: 25px;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8%;
+    width: 900px;
+    padding: 6%;
+    text-align: left;
+   
+
+  }
+
+  .importancia_div .titulo2_importancia{
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #D8FF99;
+    font-size: 28px;
+  }
+  .importancia_div .importancia_texto{
+    margin-top: 5%;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+  }
+
+  .importancia_div .importancia_img{
+    margin-top: 8%;
+  }
