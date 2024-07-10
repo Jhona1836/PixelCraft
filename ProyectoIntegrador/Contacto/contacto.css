@@ -69,6 +69,10 @@ nav ul li a:hover {
     font-size: 48px;
     margin-bottom: 10px;
     color: #4caf50;
+    font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 64px;
 }
 
 .contact p {
