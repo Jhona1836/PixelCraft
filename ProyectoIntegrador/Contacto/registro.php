@@ -26,7 +26,8 @@ $description = $_POST['description'];
 $sql = "INSERT INTO tabla_registro (usuario, correo, telefono, direccion, comentario) VALUES ('$name', '$email', '$phone', '$address', '$description')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Nuevo registro creado exitosamente";
+
+    include('registroexitoso.html');
     
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
