@@ -197,14 +197,7 @@ nav ul li a:hover {
 .contact h1 {
     font-size: 78px;
     margin-bottom: 10px;
-    color: #4da950;
-    font-family: "barlow";
-    animation: slideInLeft 1s ease-in-out;
-}
-
-@keyframes slideInLeft {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
+    color: #4caf50;
 }
 
 .contact p {
