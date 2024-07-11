@@ -12,8 +12,16 @@ if ($conn->connect_error) {
     die("La conexión falló: " . $conn->connect_error);
 }
 
+$search = '';
+if (isset($_POST['search'])) {
+    $search = $conn->real_escape_string($_POST['search']);
+}
+
 // Consulta para obtener los usuarios registrados
 $sql = "SELECT id, usuario, correo, telefono, direccion, comentario FROM tabla_registro";
+if ($search) {
+    $sql .= " WHERE usuario LIKE '%$search%' OR correo LIKE '%$search%' OR telefono LIKE '%$search%' OR direccion LIKE '%$search%' OR comentario LIKE '%$search%'";
+}
 $result = $conn->query($sql);
 ?>
 
@@ -26,14 +34,14 @@ $result = $conn->query($sql);
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #3B8541;
             margin: 0;
             padding: 0;
             display: flex;
         }
         .sidebar {
             width: 250px;
-            background-color: #333;
+            background-color: #45a049;
             padding: 20px;
             color: #fff;
         }
@@ -41,16 +49,17 @@ $result = $conn->query($sql);
             display: block;
             padding: 10px;
             margin-bottom: 5px;
-            color: #fff;
+            color: #ddd;
             text-decoration: none;
             transition: background-color 0.3s;
         }
         .sidebar a:hover {
-            background-color: #555;
+            background-color: #3B8541;
         }
         .content {
             flex: 1;
             padding: 20px;
+        
         }
         table {
             border-collapse: collapse;
@@ -75,20 +84,45 @@ $result = $conn->query($sql);
             background-color: #ddd;
         }
         h2 {
-            color: #333;
+            color: #f2f2f2;
             margin-bottom: 20px;
+        }
+        .search-form {
+            margin-bottom: 20px;
+        }
+        .search-form input[type="text"] {
+            padding: 8px;
+            width: calc(100% - 120px);
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .search-form input[type="submit"] {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .search-form input[type="submit"]:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <div class="sidebar">
-        <h2>Panel de Administrador</h2>
+        <h2>PixelCraft</h2>
         <a href="#usuarios">Usuarios Registrados</a>
         <a href="#">Reportes</a>
         <a href="#">Configuración</a>
     </div>
     <div class="content">
         <h2 id="usuarios">Usuarios Registrados</h2>
+        <form class="search-form" method="post" action="">
+            <input type="text" name="search" placeholder="Buscar usuarios..." value="<?php echo $search; ?>">
+            <input type="submit" value="Buscar">
+        </form>
         <table>
             <tr>
                 <th>ID</th>
@@ -112,7 +146,7 @@ $result = $conn->query($sql);
                           </tr>";
                 }
             } else {
-                echo "<tr><td colspan='7'>No hay usuarios registrados</td></tr>";
+                echo "<tr><td colspan='6'>No hay usuarios registrados</td></tr>";
             }
             $conn->close();
            ?>
