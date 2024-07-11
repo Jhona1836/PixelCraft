@@ -116,6 +116,7 @@ $result = $conn->query($sql);
         <a href="#usuarios">Usuarios Registrados</a>
         <a href="#">Reportes</a>
         <a href="#">Configuración</a>
+        <a href="..//Index/Home.html">regresar</a>
     </div>
     <div class="content">
         <h2 id="usuarios">Usuarios Registrados</h2>
