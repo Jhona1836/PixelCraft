@@ -36,7 +36,7 @@ body {
 
 .header .logo span {
     font-family: "Jomhuria", serif;
-    font-size: 2.5rem; /* Adjust font size */
+    font-size: 2.5rem; 
     color: white;
     vertical-align: middle;
     text-align: center;
@@ -52,23 +52,23 @@ body {
 }
 
 .nav-links li a {
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1.2rem; 
     color: white;
     text-decoration: none;
-    padding: 10px 15px; /* Adjust padding */
+    padding: 10px 15px; 
     border-radius: 5px;
     transition: all 0.3s;
 }
 
 .nav-links li a:hover {
     background-color: #4caf50;
-    padding: 12px 17px; /* Adjust padding */
+    padding: 12px 17px; 
 }
 
 .btn button {
     font-weight: 700;
-    color: #ffffff; /* Adjust text color */
-    padding: 12px 20px; /* Adjust padding */
+    color: #ffffff; 
+    padding: 12px 20px; 
     border: 2px solid yellowgreen;
     border-radius: 10px;
     background-color: #B1FF33;
@@ -106,7 +106,7 @@ body {
 .heroe .texto {
   width: 50%;
   text-align: left;
-  padding-right: 20px; /* Espacio entre el texto y el video */
+  padding-right: 20px; 
 }
 
 .heroe .video {
@@ -118,7 +118,7 @@ body {
 .heroe .video video {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Ajusta según el diseño */
+  border-radius: 10px; 
 }
 
 @media (max-width: 768px) {
@@ -134,13 +134,13 @@ body {
 
 
 .heroe h1 {
-    font-size: 3rem; /* Adjust font size */
+    font-size: 3rem; 
     text-align: left;
     margin-bottom: 20px;
 }
 
 .heroe p {
-    font-size: 1.6rem; /* Adjust font size */
+    font-size: 1.6rem; 
     margin: 20px 0;
     text-align: left;
 }
@@ -148,14 +148,14 @@ body {
 .boton {
     background-color: #aaff00;
     color: #000000;
-    padding: 10px 10px; /* Adjust padding */
+    padding: 7px 7px; 
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .boton:hover {
-    background-color: #9ccc65; /* Adjust hover background color */
+    background-color: #9ccc65; 
 }
 
 .paquetes {
@@ -165,14 +165,14 @@ body {
 }
 
 .paquetes h2 {
-    font-size: 3.5rem; /* Adjust font size */
+    font-size: 3.5rem; 
     text-align: center;
     color: #ffffff;
     margin-bottom: 20px;
 }
 
 .paquetes p {
-    font-size: 1.4rem; /* Adjust font size */
+    font-size: 1.4rem; 
     text-align: left;
     margin: 0 auto 40px;
 }
@@ -183,8 +183,7 @@ body {
     background-color: #000000;
     margin: 20px 0;
     padding: 20px;
-    border-radius: 10px; /* Adjust border radius */
-}
+    border-radius: 10px; 
 
 .texto {
     width: 60%;
@@ -202,18 +201,18 @@ body {
 
 .imagen img {
     width: 100%;
-    border-radius: 10px; /* Adjust border radius */
+    border-radius: 10px; 
 }
 
 .paquete h3 {
-    font-size: 3rem; /* Adjust font size */
+    font-size: 3rem; 
     color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .paquete p {
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1.2rem; 
     margin-bottom: 10px;
     text-align: left;
 }
@@ -225,12 +224,12 @@ body {
 }
 
 .contacto h3 {
-    font-size: 2rem; /* Adjust font size */
+    font-size: 2rem; 
     margin-bottom: 10px;
 }
 
 .contacto p {
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1.2rem; 
     margin-bottom: 20px;
 }
 
